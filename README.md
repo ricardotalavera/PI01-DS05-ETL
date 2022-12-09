@@ -10,11 +10,6 @@ El presente proyecto en su fase obligatoria consta de tres etapas claramente mar
 
 ### 1.- Extracción
 
-###Diagrama de Secuencia
-
-![](https://drive.google.com/file/d/1EhswTJIwSP9CPf4cfDehr97YYG2ntnjf/view?usp=share_link)
-                    
-
 En esta fase se reciben específicamente 4 archivos concernientes a datos de la industria del streaming. Los archivos pertenecen a cada una de las siguientes cuatro plataformas ampliamente conocidas : **Netflix, Disney, Hulu y Amazon-Prime.**
 
 Debemos recordar que la data de entrada puede tener cualquier tipo de forma o extensión de archivos, siendo la extensiones más trilladas : **CSV, TXT, JSON y PARQUET**.
@@ -24,18 +19,6 @@ El programa en su fase de extracción, es capaz de diferenciar por si solo el ti
 La primera parte importante, es lograr cargar los 4 archivos a través de PANDAS, para luego poder proceder a la fase de transformación.
 
 ### 2.- Transformación
-
-###Diagrama de Secuencia
-
-
-                    
-```seq
-EDA.py->data.csv.: Transformación
-EDA.py->data_api.csv.: Transformación
-EDA.py->ac_pe.csv.: Transformación
-EDA.py->ge_pe.csv.: Transformación
-
-```
 
 Una vez los datos estuvieron levantados, la primera consigna fue verificar que los archivos de origen tuvieran la misma estructura en cuanto a orden y tipo de campos, de tal forma de poder decidir si el programa se personalizaba por cada archivo o simplemente se podía a traves de un bucle hacer un solo tipo de procesamiento para todos ellos.
 
@@ -76,17 +59,6 @@ Cabe resaltar que las tablas creadas : actores-peliculas y genero-peliculas se c
 ### 3.- Carga
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--iOsUGN0b--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/l4jt274288k241g94r66.png)
 Como tercera etapa, se solicitaba que la data generada sirviera de Materia Prima para una API, la cual debía ser desarrollada a través de **FASTAPI** propio de Python y usando la tecnología de containers aportada por **DOCKERS**.
-###Diagrama de Secuencia
-
-
-                    
-```seq
-data_api.csv->FASTAPI.: Carga
-ac_pe.csv->FASTAPI.: Carga
-ge_pe.csv->FASTAPI.: Carga
-data.csv->ML/Analit.: Carga
-
-```
 
 Para lo cual se genera el directorio **PI-05** en forma local para empezar esta fase, el cual contendrá todo lo necesario para levantar el container de DOCKERS, por tanto los archivos de la fase de transformación como productos terminados, son dejados en este directoriocomo primera decisión.
 
