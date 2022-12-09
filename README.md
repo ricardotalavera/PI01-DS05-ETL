@@ -12,14 +12,9 @@ El presente proyecto en su fase obligatoria consta de tres etapas claramente mar
 
 ###Diagrama de Secuencia
 
-
+![](https://drive.google.com/file/d/1EhswTJIwSP9CPf4cfDehr97YYG2ntnjf/view?usp=share_link)
                     
-```seq
-Netflix.json->EDA.py: Extraccion
-Disney.csv->EDA.py: Extraccion
-Hulu.csv->EDA.py: Extraccion
-Amazon.csv->EDA.py: Extraccion
-```
+
 En esta fase se reciben específicamente 4 archivos concernientes a datos de la industria del streaming. Los archivos pertenecen a cada una de las siguientes cuatro plataformas ampliamente conocidas : **Netflix, Disney, Hulu y Amazon-Prime.**
 
 Debemos recordar que la data de entrada puede tener cualquier tipo de forma o extensión de archivos, siendo la extensiones más trilladas : **CSV, TXT, JSON y PARQUET**.
