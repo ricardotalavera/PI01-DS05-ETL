@@ -58,6 +58,7 @@ Cabe resaltar que las tablas creadas : actores-peliculas y genero-peliculas se c
 
 ### 3.- Carga
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--iOsUGN0b--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/l4jt274288k241g94r66.png)
+
 Como tercera etapa, se solicitaba que la data generada sirviera de Materia Prima para una API, la cual debía ser desarrollada a través de **FASTAPI** propio de Python y usando la tecnología de containers aportada por **DOCKERS**.
 
 Para lo cual se genera el directorio **PI-05** en forma local para empezar esta fase, el cual contendrá todo lo necesario para levantar el container de DOCKERS, por tanto los archivos de la fase de transformación como productos terminados, son dejados en este directoriocomo primera decisión.
