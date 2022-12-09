@@ -1,0 +1,7 @@
+fastapi==0.88.0     			# Framework
+uvicorn==0.20.0     			# Servidor
+pandas==1.4.4       			# Libreria pandas para EDA y ETL
+numpy==1.23.2				# Libreria pandas para EDA y ETL
+display==1.0.0				# Libreria para display
+tqdm==4.64.1				# Libreria Barra de progreso
+pydantic==1.10.2
